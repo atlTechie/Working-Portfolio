@@ -69,3 +69,18 @@ footer {
     }
   }
 }
+
+.nav-link,
+.navbar-brand {
+  color: $txt;
+}
+
+.btn-primary {
+  background: $primary;
+  border: 1px solid $primary;
+}
+
+.btn-outline-primary {
+  border: 1px solid $primary;
+  color: $primary;
+}
