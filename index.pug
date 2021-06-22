@@ -1,0 +1,37 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
+  link(rel="stylesheet", href="style.css")
+  title Portfolio of E. Wright
+body 
+    include includes/header.pug
+    main.flex-grow-1.d-flex.flex-column.py-3
+        .container.h-100.d-flex.flex-column.align-items-center.justify-content-center.text-light 
+            .row.align-items-center
+                .col-12.col-lg-4 
+                    h1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, voluptatum!
+                    p.mb-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi perspiciatis obcaecati minima vel veniam nulla debitis praesentium, eum iusto.
+                    .row 
+                        .col-6 
+                            a.btn.btn-primary.mr-3.w-100(href="#") View Work 
+                        .col-6
+                            a.btn.btn-outline-primary.w-100(href="#") Contact Me 
+                .col-12.col-lg-8
+                    .home-img-wrapper
+                        img.img-fluid.home-img(src="images/me.png", alt="")
+                        .design-wrapper 
+                            h4 Design 
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, rem?
+                        .dev-wrapper 
+                            h4 Development
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, corporis.
+    include includes/footer.pug
+
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js")
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous')

@@ -1,0 +1,106 @@
+body {
+  background-color: #003049;
+}
+
+body,
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+header,
+footer {
+  background: #004266;
+}
+
+.home-img-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  margin-top: 3em;
+}
+
+.home-img-wrapper img {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.home-img-wrapper .design-wrapper,
+.home-img-wrapper .dev-wrapper {
+  background: #eae2b7;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+  color: #003049;
+  padding: 2em;
+}
+
+.home-img-wrapper .design-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-bottom: 1em;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 30px;
+}
+
+.home-img-wrapper .dev-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-bottom: 1em;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 100px;
+}
+
+@media (min-width: 768px) {
+  .home-img-wrapper {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+  }
+  .home-img-wrapper img {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 7;
+    grid-column: 6/13;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .home-img-wrapper .design-wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .home-img-wrapper .dev-wrapper {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+}
+/*# sourceMappingURL=style.css.map */
