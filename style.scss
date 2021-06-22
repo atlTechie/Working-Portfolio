@@ -73,14 +73,30 @@ footer {
 .nav-link,
 .navbar-brand {
   color: $txt;
+  &:hover {
+    color: $primary-hover;
+  }
 }
 
 .btn-primary {
   background: $primary;
   border: 1px solid $primary;
+  &:hover {
+    border: 1px solid $primary;
+    background: $primary-hover;
+  }
 }
 
 .btn-outline-primary {
   border: 1px solid $primary;
   color: $primary;
+  &:hover {
+    border: 1px solid $primary;
+    background: $primary-hover;
+  }
+}
+
+.list-group-item {
+  background: transparent;
+  border: none;
 }

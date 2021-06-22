@@ -109,13 +109,33 @@ footer {
   color: #2b2d42;
 }
 
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #ab0d1f;
+}
+
 .btn-primary {
   background: #ef233c;
   border: 1px solid #ef233c;
 }
 
+.btn-primary:hover {
+  border: 1px solid #ef233c;
+  background: #ab0d1f;
+}
+
 .btn-outline-primary {
   border: 1px solid #ef233c;
   color: #ef233c;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid #ef233c;
+  background: #ab0d1f;
+}
+
+.list-group-item {
+  background: transparent;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
