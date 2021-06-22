@@ -100,3 +100,39 @@ footer {
   background: transparent;
   border: none;
 }
+
+// Portfolio Wrapper
+.portfolio-wrapper {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+  display: grid;
+
+  grid-gap: 1em;
+}
+
+.portfolio-item {
+  padding: 3em;
+  background: $primary;
+  height: 250px;
+}
+
+.one {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.two {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.three {
+  grid-row: 2/4;
+  grid-column: 3/5;
+}
+.five {
+  grid-row: 3/4;
+  grid-column: 2/5;
+}

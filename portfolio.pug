@@ -1,0 +1,30 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
+  link(rel="stylesheet", href="style.css")
+  title Portfolio of E. Wright
+body 
+    include includes/header.pug
+    main.flex-grow-1.d-flex.flex-column.py-3
+        .container.h-100.d-flex.flex-column.align-items-center.justify-content-center.text-light 
+            .row.align-items-center
+                .col-12.col-lg-4 
+                    h1 A few pieces of recent work
+                    p.text-muted.mb-5.mt-4 Here are a few of my recent work items. Some company names and information have been changed to protect confidentiality.
+                .col-12.col-lg-8
+                    .portfolio-wrapper
+                        .portfolio-item.one 
+                        .portfolio-item.two 
+                        .portfolio-item.three
+                        .portfolio-item.four
+                        .portfolio-item.five
+
+    include includes/footer.pug
+
+
+
